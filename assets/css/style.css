@@ -1,0 +1,199 @@
+@charset "UTF-8";
+/* fichier Sass pour les variables - version mobile */
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  margin: 0;
+}
+
+/* pas de limitation de taille pour le mobile*/
+/* pour la version ordinateur ordinateur mettre le média en encapsulation des @imports en aval*/
+/* @media (min-width: 1200px) { } */
+header {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+header h1 {
+  color: #707070;
+  font-size: 2.2em;
+}
+header p {
+  color: #224127;
+  font-size: 1em;
+  font-weight: bold;
+}
+header .logo-thegarden {
+  width: 80%;
+  margin: auto;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+
+main {
+  /* permet de gérer l'affichage uniquement WEB ou uniquement Mobile */
+  /*  */
+  /* taille des images pour toutes les sections */
+  /* */
+  /*section 1 */
+  /*section 2 */
+  /*section 3 */
+}
+main section, main .section5 {
+  /* toutes les sections pour mobile*/
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  margin-right: 2vh;
+  margin-left: 2vh;
+  text-align: center;
+}
+main .section5 {
+  /* la section 5 est différente sur mobile des autres sections */
+  margin-right: 0;
+  margin-left: 0;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+main .cWEB {
+  display: none;
+}
+main .cMOB {
+  display: block;
+}
+main .img100 {
+  width: 100%;
+  margin: auto;
+}
+main .img80 {
+  width: 80%;
+  margin: auto;
+}
+main .img-garantie {
+  margin-top: 50px;
+  width: 96px;
+  height: 96px;
+}
+main h2 {
+  color: #38d0ab;
+  font-size: 1.9em;
+}
+main h2 span {
+  /* ne s'affiche pas en version modible */
+  display: none;
+}
+main h3 {
+  color: #224127;
+  font-size: 2em;
+}
+main .divpromo {
+  text-align: center;
+  display: flex;
+}
+main .divpromo ul {
+  list-style: none;
+  color: #707070;
+  font-weight: bold;
+}
+main .divpromo ul li:nth-child(1) {
+  text-decoration: line-through;
+  font-size: 3em;
+}
+main .divpromo ul li:nth-child(2) {
+  font-size: 4em;
+}
+main #sect3 {
+  display: block;
+}
+main #sect3 ul {
+  list-style: none;
+  color: #38d0ab;
+  text-align: left;
+}
+main ol {
+  text-align: left;
+  color: #707070;
+  font-size: 1.5em;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+}
+main h4 {
+  color: #38d0ab;
+  font-size: 2em;
+}
+main p, main footer p, footer main p {
+  color: #707070;
+  font-size: 1em;
+}
+main a {
+  text-decoration: none;
+  color: #707070;
+  font-weight: bold;
+}
+main .p6 {
+  font-size: 0.8em;
+  color: #38d0ab;
+  font-weight: bold;
+}
+main .title-bold {
+  font-weight: bold;
+}
+main .btn {
+  text-decoration: none;
+  color: #224127;
+  background-color: #38d0ab;
+  font-size: 1.8em;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 1vh;
+  margin-top: 5vh;
+}
+
+footer {
+  text-align: center;
+}
+footer .f-d-mob {
+  margin-left: 5vh;
+  margin-right: 5vh;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+footer p, footer li {
+  color: #224127;
+  font-size: 1em;
+}
+footer p {
+  font-size: 1em;
+}
+footer ul {
+  list-style: none;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  text-align: center;
+}
+footer ul li {
+  color: #38d0ab;
+  font-size: 1em;
+  font-weight: bold;
+}
+footer ul li a {
+  text-decoration: none;
+  color: #38d0ab;
+}
+footer a {
+  text-decoration: none;
+  color: #224127;
+  font-weight: bold;
+}
+footer .logoF {
+  width: 128px;
+  height: 128px;
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+}
+footer .order-img {
+  display: flex;
+  flex-direction: column;
+}
+
+.f-mob {
+  background-image: url("../img/Pelouse.png");
+}/*# sourceMappingURL=style.css.map */

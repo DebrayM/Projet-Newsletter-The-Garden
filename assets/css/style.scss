@@ -1,0 +1,8 @@
+@import '_vars.scss';
+@import '_body.scss';
+/* pas de limitation de taille pour le mobile*/
+/* pour la version ordinateur ordinateur mettre le média en encapsulation des @imports en aval*/
+/* @media (min-width: 1200px) { } */
+@import '_header.scss';
+@import '_main.scss';
+@import '_footer.scss';

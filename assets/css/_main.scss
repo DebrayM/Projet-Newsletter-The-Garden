@@ -1,0 +1,129 @@
+main {
+    section {
+        /* toutes les sections pour mobile*/
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+        margin-right: 2vh;
+        margin-left: 2vh;
+        text-align: center;
+    }
+    .section5 {
+        /* la section 5 est différente sur mobile des autres sections */
+        @extend section;
+        margin-right: 0;
+        margin-left: 0;
+        padding-top: 5vh;
+        padding-bottom: 5vh; 
+    }
+    /* permet de gérer l'affichage uniquement WEB ou uniquement Mobile */
+    .cWEB {
+        display: none;
+    }
+    .cMOB {
+        display: block;
+    }
+    /*  */
+    /* taille des images pour toutes les sections */
+    .img100 {
+        width: 100%;
+        margin: auto;
+    }
+    .img80 {
+        width: 80%;
+        margin: auto;
+    }
+    .img-garantie {
+        margin-top: 50px;
+        width: 96px;
+        height: 96px;
+    }
+    /* */ 
+    /*section 1 */
+    h2 {
+        color: $main-color-title;
+        font-size: 1.9em;
+
+        span {
+            /* ne s'affiche pas en version modible */
+            display: none;
+        }
+    }
+    /*section 2 */
+    h3 {
+        color: $color-text-dark;
+        font-size: 2em;
+    }
+    .divpromo {
+        text-align: center;
+        display: flex;
+
+        ul {
+            list-style: none;
+            color: $color-text;
+            font-weight: bold;
+
+            li{
+                &:nth-child(1) {
+                    text-decoration: line-through;
+                    font-size: 3em;
+                }
+                &:nth-child(2) {
+                    font-size: 4em;
+                }
+            }
+        }
+
+    }
+
+    /*section 3 */
+    #sect3 {
+        display: block;
+
+        ul {
+            list-style: none;
+            color: $main-color-title;
+            text-align: left;
+        }
+    }
+    ol {
+        text-align: left;
+        color: $color-text;
+        font-size: 1.5em;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+    }
+    h4 {
+        color: $main-color-title;
+        font-size: 2em;
+    }
+    p {
+        color: $color-text;
+        font-size: 1em;
+    }
+    a {
+        text-decoration: none;
+        color: $color-text;
+        font-weight: bold;
+    }
+
+    .p6 {
+        font-size: 0.8em;
+        color: $main-color-title;
+        font-weight: bold;
+    }
+
+    .title-bold {
+        font-weight: bold;
+    }
+
+    .btn {
+        text-decoration: none;
+        color: $color-text-dark;
+        background-color: $main-color-title;
+        font-size: 1.8em;
+        font-weight: bold;
+        border-radius: 10px;
+        padding: 1vh;
+        margin-top: 5vh;
+    }
+}

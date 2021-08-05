@@ -1,40 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Newsletters The Garden Auxerre 2021</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <header>
         <!-- Entête de la page mobile -->
-        <a href=""><img src="asests/img/logo.png" alt="Logo The Garden"></a>
+        <a href="#"><img src="assets/img/logo.png" alt="Logo The Garden" class="logo-thegarden"></a>
         <h1>Newsletters N°18 du 02/08/2021</h1>
         <p>Version en ligne</p>
     </header>
+    <main>
     <section>
         <!-- section 1 : affiche le titre et la tondeuse 
             * (page 1 sur mobile)-->
-        <h2>Tondeuse thermique autotractée « LONCIN T56T – 196 LAM »</h2>
-        <img src="assets/img/tondeuse_mulching.jpg" alt="Image de tondeuse thermique autotractée">
+        <h2>Tondeuse thermique autotractée LONCIN T56T – 196 <span>LAML</span></h2>
+        <!-- cette image ne s'affiche que pour la version mobile -->
+        <img src="assets/img/tondeuse_mulching.jpg" alt="Image de tondeuse thermique autotractée" class="img80 cMOB">
     </section>
     <section>
         <!-- section 2 : affiche le prix, les caractéristiques et le bouton 
             * (page 2 sur mobile)-->
-        <h3>Promotion</h3>
-        <img src="assets/img/Garantie-removebg-preview.png" alt="Image 2 ans de garantie">
-        <p>399 €</p>
-        <p>299 €</p>
-        <ul>
-            <ol>Confort et souplesse</ol>
-            <ol>Moteur Loncin OHV (3,2kW)</ol>
-            <ol>Multiching inclus</ol>
-            <ol>Raccord Quickclean pour l'entretien</ol>
-        </ul>
-        <a href="#">ça m'intéresse</a>
+        <div>
+            <h3>Promotion</h3>
+            <div class="divpromo">
+                <img src="assets/img/Garantie-removebg-preview.png" alt="Image 2 ans de garantie" class="img-garantie">
+                <ul>
+                    <li><span>399 €</span></li>
+                    <li>299 €</li>
+                </ul>
+            </div>
+            <ol>
+                <li>Confort et souplesse</li>
+                <li>Moteur Loncin OHV (3,2kW)</li>
+                <li>Bac de ramassage</li>
+                <li>Multiching inclus</li>
+            </ol>
+            <p class="cMOB">Et raccord Quickclean pour l'entretien</p>
+            <a href="#" class="btn">Ca m'intéresse !</a>
+        </div>
+        <!-- cette image ne s'affiche que pour la version WEB -->
+        <img src="assets/img/Tondeuse.png" alt="Image de tondeuse thermique autotractée" class="cWEB">
     </section>
-    <section>
+    <section id="sect3">
          <!-- section 3 : les références clients et le texte de la news letter 
             * (page 3 sur mobile)-->
         <ul>
@@ -42,6 +57,7 @@
             <li>Votre code promotion : A1235</li>
             <li>Vos points fidélité : 450 pts</li>
         </ul>
+        <div>
         <p>Cher client,</p>
         <p>Idéale pour votre jardin la Tondeuse thermique autotractée, 
             puissante et robuste, que nous vous proposons cette semaine, 
@@ -49,55 +65,82 @@
             finement broyée. Facile d'entretien grâce au raccord Quickclean, elle respect votre gazon 
             avec des roues plus grosse à l'arrière. Alors, pour tondre sans effort : adoptez-la!
         </p>
-        <p>Et bien sûr, vous trouverez sur notre site <a href="#">The Garden</a> tous les outils et accessoires de jardinage qui la complèteront si bien.
+        <p>Et bien sûr, vous trouverez sur notre site <a href="#" class="title-bold">The Garden</a> tous les outils et accessoires de jardinage qui la complèteront si bien.
         </p>
+        </div>
+        <h2 class="cWEB">Rejoignez-nous aussi sur mobile</h2>
     </section>
     <section>
          <!-- section 4 : la rubrique trucs et astuces 
             * (page 4 sur mobile)-->
-        <h3>« truc et astuce »</h3>
-        <img src="" alt="">
-        <p>Comment entretenir votre tondeuse ?</p>
-        <img src="" alt="">
-        <p>La tonte est un engrais pour votre jardin : le saviez-vous ?</p>
+        <div class="cWEB"> <!-- pour mobile c'est caché-->  
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+        </div>
+        <h2><span>Et voici votre rubrique</span> « Trucs et Astuces »<span> de la semaine !</span></h2>
+        <img src="assets/img/truc-astuce.png" alt="Logo trucs et astuces">
+        <p><a href="#">Comment entretenir votre tondeuse ?</a>
+        </p>
+        <p><a href="#">La tonte est un engrais pour votre jardin : le saviez-vous ?</a>
+        </p>
     </section>
-    <section>
+    <section class="section5">
          <!-- section 5 : la carte de fidélité 
             * (page 5 sur mobile)-->
-        <img src="assets/img/carte_fidelite.svg" alt="Présentaiton de la carte de fidélité">
-        <h3>La carte de fidélité !</h3>
-        <p>Grace à la carte de fidélité, vous cumuler 10 points par tranche d’achat de 500 euros. Au bout de 500 points, vous pouvez bénéficier d’une remise de 10% sur votre achat.
-            Votre carte est créditée de 10 points dès le premier achat.
-        </p>
+        <img src="assets/img/carte_fidelite.svg" alt="Présentaiton de la carte de fidélité" class="img100">
+        <div>
+            <h2>La carte de fidélité !</h2>
+            <p>Grace à la carte de fidélité, vous cumuler 10 points par tranche d’achat de 500 euros. 
+                Au bout de 500 points, vous pouvez bénéficier d’une remise de 10% sur votre achat.
+            Votre carte est créditée de 10 points dès le premier achat.</p>
+        </div>
     </section>
     <section>
          <!-- section 6 : les mentions obligatoires d'informations et de désinscription
             * (page 6 sur mobile)-->
-        <p> Ce message vous a été envoyé par 
+        <p class="p6"> Ce message vous a été envoyé par 
             <a href="#">annonce@thegarden.fr</a></p>
-        <p>Si vous ne souhaitez plus recevoir 
+        <p class="p6">Si vous ne souhaitez plus recevoir 
             cet e-mail, <a href="#">cliquez ici</a></p>
-        <p>Veuillez noter que ce message a été 
+        <p class="p6">Veuillez noter que ce message a été 
             envoyé à l'adresse électronique 
             suivante : <a href="#">p.nom@messagerie.fr</a></p>
     </section>
-    <footer>
-         <a href="#"><img src="assets/img/facebook.png" alt="logo facebook"></a>
-         <a href="#"><img src="assets/img/twitter.png" alt="logo twitter"></a>
-         <a href="#"><img src="assets/img/youtube.png" alt="logo youtube"></a>
-        <a href="#">contact-auxerre@thegarden.fr</a>
-        <!-- adresse et siret-->
-        <p>03 86 44 33 22</p>
-        <p>1 avenue des plaines de l’Yonne</p>
-        <p>89000 AUXERRE</p>
-        <p>Siret : 440 280 760 000 30</p>
-        <!-- Mentions légales-->
-        <ul>
-            <li>Confidentialité</li>
-            <li>Vie privée</li>
-            <li>Données</li>
-        </ul>
-        <p>2021 &copy The garden</p>
+    </main>
+    <footer class="f-mob f-web">
+        <div class="f-d-mob">
+            <div>
+                <!-- div d'inversion en mode WEB pour passage des images après les blocs de coordonnées-->
+                <div class="order-img">
+                    <a href="#"><img src="assets/img/facebook.png" alt="logo facebook" class="logoF"></a>
+                    <a href="#"><img src="assets/img/twitter.png" alt="logo twitter" class="logoF"></a>
+                    <a href="#"><img src="assets/img/youtube.png" alt="logo youtube" class="logoF"></a>
+                </div>
+                <div>
+                    <!-- div d'inversion en mode WEB pour passage en ligne des contenu-->
+                    <div>
+                        <!-- nous contacter-->
+                        <p>Nous contacter :</p>
+                        <p>03 86 44 33 22</p>
+                        <a href="#">contact-auxerre@thegarden.fr</a>
+                    </div>
+                    <div>
+                        <!-- adresse et siret -->
+                        <p>1 avenue des plaines de l’Yonne</p>
+                        <p>89000 AUXERRE</p>
+                        <p>Siret : 440 280 760 000 30</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Mentions légales-->
+            <ul>
+                <li><a href="#">Vie privée</a></li>
+                <li><a href="#">Mentions légales</a></li>
+            </ul>
+            <p>2021 &copy The garden</p>
+        </div>
     </footer>
 </body>
 </html>
