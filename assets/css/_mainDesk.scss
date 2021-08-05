@@ -1,0 +1,56 @@
+@media (min-width: 1200px) { 
+    main{
+    /* permet de gérer l'affichage uniquement WEB ou uniquement Mobile */
+    .cWEB {
+        display: block;
+    }
+    .cMOB {
+        display: none;
+    }
+    /*  */
+    section {
+        /* toutes les sections pour mobile*/
+        padding: 5vh;
+        text-align: center;
+    }
+    /*  */
+    /* section 1 */
+    .szDivDesk {
+        width: 45%;  
+    }
+    .szimgDesk {
+        width: 55%;  
+    }
+    .Flexrowcolumn {
+        display: flex;
+        flex-direction: row;
+    }
+    h2 span {
+        display: block;
+    }
+    /*section 3 */
+    #sect3 ul {
+        text-align: right;
+    }
+    /* section 4 */
+    .cadrephoto {
+        border: 4px solid $main-color-green;
+    }
+    #truc-astuce {
+        display: flex;
+        flex-direction: row;
+        gap: 10vh;
+    }
+    .pad-text {
+        padding-top: 3vh;
+        padding-bottom: 2vh;
+        text-align: left;
+    }
+    /* section 5 */
+    .section5 {
+        display: flex;
+        flex-direction: row;
+    }
+    /* fin de main desktop */
+    }
+}

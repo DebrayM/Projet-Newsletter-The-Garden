@@ -1,0 +1,63 @@
+@media (min-width: 1200px) { 
+
+footer{
+    text-align: left;
+
+    .f-d-mob {
+        margin-left: 5vh;
+        margin-right: 5vh;
+        background-image: none;
+        background: $color-text-dark;
+    }
+    .logoF {
+        width: 64px;
+        height: 64px;
+        margin-top: 4vh;
+        margin-bottom: 4vh;
+    }
+    .order-img {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+    p, li {
+        color: white;
+        font-size: 1em;
+    }
+    a {
+        color: $main-color-title;
+        font-weight: normal;
+    }
+    .movedivreverse{
+        /* inversion en mode WEB pour passage des logos après les coordonnées */ 
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 15vh;
+    }
+    .movediv{
+        /* inversion en mode WEB pour passage en ligne des contenus */ 
+        display: flex;
+        flex-direction: row;
+        gap: 15vh;
+    }
+    .ulflex {
+        /* aligne vie privée et metion légales */
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+    }
+    .copyright {
+        text-align: right;
+        margin-right: 5vh;
+    }
+}
+
+.f-mob {
+    background-image: none;
+    background: $color-text-dark;
+}
+.f-flex {
+    display: flex;
+    flex-direction: row;
+}
+}

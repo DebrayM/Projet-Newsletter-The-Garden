@@ -1,10 +1,11 @@
 footer{
+    text-align: center;
+
     .f-d-mob {
         margin-left: 5vh;
         margin-right: 5vh;
         background-color: rgba($color: #fff, $alpha: 0.85);
     }
-    text-align: center;
     p, li {
         color: $color-text-dark;
         font-size: 1em;
@@ -15,8 +16,8 @@ footer{
     }
     ul {
         list-style: none;
-        padding-top: 5vh;
-        padding-bottom: 5vh;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
         text-align: center;
 
     li {
@@ -40,13 +41,22 @@ footer{
     .logoF {
         width: 128px;
         height: 128px;
-        margin-top: 4vh;
-        margin-bottom: 4vh;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
     }
-
+    .ulflex {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+    }
     .order-img {
         display: flex;
         flex-direction: column;
+        gap: 3px;
+    }
+    .copyright {
+        text-align: center;
+        margin: 0;
     }
 }
 

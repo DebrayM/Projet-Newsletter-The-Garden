@@ -25,11 +25,36 @@ header p {
 }
 header .logo-thegarden {
   width: 80%;
-  margin: auto;
   padding-top: 5vh;
   padding-bottom: 5vh;
 }
 
+@media (min-width: 1200px) {
+  header {
+    text-align: start;
+  }
+  header .FlexDesk {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  header h1 {
+    color: #707070;
+    font-size: 2.2em;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+  }
+  header .logo-thegarden {
+    width: 18%;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+  }
+  header p {
+    text-align: center;
+  }
+}
 main {
   /* permet de gérer l'affichage uniquement WEB ou uniquement Mobile */
   /*  */
@@ -38,21 +63,17 @@ main {
   /*section 1 */
   /*section 2 */
   /*section 3 */
+  /* section 4 */
 }
 main section, main .section5 {
   /* toutes les sections pour mobile*/
-  margin-top: 5vh;
-  margin-bottom: 5vh;
-  margin-right: 2vh;
-  margin-left: 2vh;
+  padding: 2vh;
   text-align: center;
 }
 main .section5 {
   /* la section 5 est différente sur mobile des autres sections */
-  margin-right: 0;
-  margin-left: 0;
-  padding-top: 5vh;
-  padding-bottom: 5vh;
+  display: flex;
+  flex-direction: column;
 }
 main .cWEB {
   display: none;
@@ -73,12 +94,16 @@ main .img-garantie {
   width: 96px;
   height: 96px;
 }
+main .Flexrowcolumn {
+  display: flex;
+  flex-direction: column;
+}
 main h2 {
   color: #38d0ab;
   font-size: 1.9em;
 }
 main h2 span {
-  /* ne s'affiche pas en version modible */
+  /* ne s'affiche pas en version mobile */
   display: none;
 }
 main h3 {
@@ -96,10 +121,10 @@ main .divpromo ul {
 }
 main .divpromo ul li:nth-child(1) {
   text-decoration: line-through;
-  font-size: 3em;
+  font-size: 2.5em;
 }
 main .divpromo ul li:nth-child(2) {
-  font-size: 4em;
+  font-size: 3em;
 }
 main #sect3 {
   display: block;
@@ -147,7 +172,67 @@ main .btn {
   padding: 1vh;
   margin-top: 5vh;
 }
+main #truc-astuce {
+  display: flex;
+  flex-direction: column;
+}
 
+@media (min-width: 1200px) {
+  main {
+    /* permet de gérer l'affichage uniquement WEB ou uniquement Mobile */
+    /*  */
+    /*  */
+    /* section 1 */
+    /*section 3 */
+    /* section 4 */
+    /* section 5 */
+    /* fin de main desktop */
+  }
+  main .cWEB {
+    display: block;
+  }
+  main .cMOB {
+    display: none;
+  }
+  main section, main .section5 {
+    /* toutes les sections pour mobile*/
+    padding: 5vh;
+    text-align: center;
+  }
+  main .szDivDesk {
+    width: 45%;
+  }
+  main .szimgDesk {
+    width: 55%;
+  }
+  main .Flexrowcolumn {
+    display: flex;
+    flex-direction: row;
+  }
+  main h2 span {
+    display: block;
+  }
+  main #sect3 ul {
+    text-align: right;
+  }
+  main .cadrephoto {
+    border: 4px solid #93c120;
+  }
+  main #truc-astuce {
+    display: flex;
+    flex-direction: row;
+    gap: 10vh;
+  }
+  main .pad-text {
+    padding-top: 3vh;
+    padding-bottom: 2vh;
+    text-align: left;
+  }
+  main .section5 {
+    display: flex;
+    flex-direction: row;
+  }
+}
 footer {
   text-align: center;
 }
@@ -165,8 +250,8 @@ footer p {
 }
 footer ul {
   list-style: none;
-  padding-top: 5vh;
-  padding-bottom: 5vh;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
   text-align: center;
 }
 footer ul li {
@@ -186,14 +271,87 @@ footer a {
 footer .logoF {
   width: 128px;
   height: 128px;
-  margin-top: 4vh;
-  margin-bottom: 4vh;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+footer .ulflex {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
 }
 footer .order-img {
   display: flex;
   flex-direction: column;
+  gap: 3px;
+}
+footer .copyright {
+  text-align: center;
+  margin: 0;
 }
 
 .f-mob {
   background-image: url("../img/Pelouse.png");
+}
+
+@media (min-width: 1200px) {
+  footer {
+    text-align: left;
+  }
+  footer .f-d-mob {
+    margin-left: 5vh;
+    margin-right: 5vh;
+    background-image: none;
+    background: #224127;
+  }
+  footer .logoF {
+    width: 64px;
+    height: 64px;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+  }
+  footer .order-img {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  footer p, footer li {
+    color: white;
+    font-size: 1em;
+  }
+  footer a {
+    color: #38d0ab;
+    font-weight: normal;
+  }
+  footer .movedivreverse {
+    /* inversion en mode WEB pour passage des logos après les coordonnées */
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 15vh;
+  }
+  footer .movediv {
+    /* inversion en mode WEB pour passage en ligne des contenus */
+    display: flex;
+    flex-direction: row;
+    gap: 15vh;
+  }
+  footer .ulflex {
+    /* aligne vie privée et metion légales */
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+  }
+  footer .copyright {
+    text-align: right;
+    margin-right: 5vh;
+  }
+
+  .f-mob {
+    background-image: none;
+    background: #224127;
+  }
+
+  .f-flex {
+    display: flex;
+    flex-direction: row;
+  }
 }/*# sourceMappingURL=style.css.map */

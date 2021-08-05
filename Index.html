@@ -13,8 +13,10 @@
 <body>
     <header>
         <!-- Entête de la page mobile -->
-        <a href="#"><img src="assets/img/logo.png" alt="Logo The Garden" class="logo-thegarden"></a>
+        <div class="FlexDesk">
+        <img src="assets/img/logo.png" alt="Logo The Garden" class="logo-thegarden">
         <h1>Newsletters N°18 du 02/08/2021</h1>
+        </div>
         <p>Version en ligne</p>
     </header>
     <main>
@@ -28,7 +30,9 @@
     <section>
         <!-- section 2 : affiche le prix, les caractéristiques et le bouton 
             * (page 2 sur mobile)-->
-        <div>
+    <div class="Flexrowcolumn">
+        <!-- on affiche en ligne ou en colonne selon que l'on soit en WEB ou en mobile-->
+        <div class="sizedivDesk">
             <h3>Promotion</h3>
             <div class="divpromo">
                 <img src="assets/img/Garantie-removebg-preview.png" alt="Image 2 ans de garantie" class="img-garantie">
@@ -47,7 +51,8 @@
             <a href="#" class="btn">Ca m'intéresse !</a>
         </div>
         <!-- cette image ne s'affiche que pour la version WEB -->
-        <img src="assets/img/Tondeuse.png" alt="Image de tondeuse thermique autotractée" class="cWEB">
+        <img src="assets/img/Tondeuse.png" alt="Image de tondeuse thermique autotractée" class="cWEB sizeimgDesk">
+    </div>
     </section>
     <section id="sect3">
          <!-- section 3 : les références clients et le texte de la news letter 
@@ -74,17 +79,19 @@
          <!-- section 4 : la rubrique trucs et astuces 
             * (page 4 sur mobile)-->
         <div class="cWEB"> <!-- pour mobile c'est caché-->  
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
+            <img src="assets/img/motobineuse.png" alt="Photo d'une motobineuse" class="cadrephoto">
+            <img src="assets/img/Tronconeuse.png" alt="Photo d'une tronçoneuse" class="cadrephoto">
+            <img src="assets/img/bac-fleur.png" alt="Photo d'un bac à fleur" class="cadrephoto">
+            <img src="assets/img/reservoir-eau.png" alt="Photo d'un réservoire à eau de jadin" class="cadrephoto">
         </div>
-        <h2><span>Et voici votre rubrique</span> « Trucs et Astuces »<span> de la semaine !</span></h2>
-        <img src="assets/img/truc-astuce.png" alt="Logo trucs et astuces">
-        <p><a href="#">Comment entretenir votre tondeuse ?</a>
-        </p>
-        <p><a href="#">La tonte est un engrais pour votre jardin : le saviez-vous ?</a>
-        </p>
+        <h2><span>Et voici votre rubrique </span>« Trucs et Astuces »<span> de la semaine !</span></h2>
+        <div id="truc-astuce">
+            <img src="assets/img/truc-astuce.png" alt="Logo trucs et astuces">
+            <div>
+                <p class="pad-text"><a href="#">Comment entretenir votre tondeuse ?</a></p>
+                <p class="pad-text"><a href="#">La tonte : un engrais pour votre jardin. le saviez-vous ?</a></p>
+            </div>
+        </div>
     </section>
     <section class="section5">
          <!-- section 5 : la carte de fidélité 
@@ -110,15 +117,15 @@
     </section>
     </main>
     <footer class="f-mob f-web">
-        <div class="f-d-mob">
-            <div>
+        <div class="f-d-mob f-flex ">
+            <div class="movedivreverse">
                 <!-- div d'inversion en mode WEB pour passage des images après les blocs de coordonnées-->
                 <div class="order-img">
                     <a href="#"><img src="assets/img/facebook.png" alt="logo facebook" class="logoF"></a>
                     <a href="#"><img src="assets/img/twitter.png" alt="logo twitter" class="logoF"></a>
                     <a href="#"><img src="assets/img/youtube.png" alt="logo youtube" class="logoF"></a>
                 </div>
-                <div>
+                <div class="movediv">
                     <!-- div d'inversion en mode WEB pour passage en ligne des contenu-->
                     <div>
                         <!-- nous contacter-->
@@ -134,12 +141,15 @@
                     </div>
                 </div>
             </div>
+            <div>
             <!-- Mentions légales-->
-            <ul>
+            <ul class="ulflex">
                 <li><a href="#">Vie privée</a></li>
                 <li><a href="#">Mentions légales</a></li>
             </ul>
-            <p>2021 &copy The garden</p>
+            <!-- copyright-->
+            <p class="copyright">2021 &copy The garden</p>
+            </div>
         </div>
     </footer>
 </body>

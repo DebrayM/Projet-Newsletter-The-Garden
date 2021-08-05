@@ -4,5 +4,8 @@
 /* pour la version ordinateur ordinateur mettre le média en encapsulation des @imports en aval*/
 /* @media (min-width: 1200px) { } */
 @import '_header.scss';
+@import '_headerDesk.scss';
 @import '_main.scss';
+@import '_mainDesk.scss';
 @import '_footer.scss';
+@import '_footerDesk.scss';
